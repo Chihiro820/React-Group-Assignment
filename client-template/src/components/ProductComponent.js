@@ -43,8 +43,12 @@ const ProductComponent = ({ product,products}) => {
             {product.tags ? <p className="card__tags">#{product.tags}</p> : ""}
           </div>
 
-          <button className="card__button"  whileHover={{
-            boxShadow: "inset 700px 0 0 0 #F3D75D", backgroundColor:"#F3D75D", color:"black"}}>Add to cart</button>
+          <motion.button className="card__button" 
+            whileHover={{
+              boxShadow: "inset 700px 0 0 0 #F3D75D", 
+              backgroundColor:"#F3D75D", 
+              color:"black"
+        }}>Add to cart</motion.button>
         </div>
       </Link>
     </motion.article>
