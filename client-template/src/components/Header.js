@@ -1,30 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { motion } from "framer-motion";
 import styled from 'styled-components'
 
 
 const Header = () => {
   
 
-  // const menuList = {
-  //   hoverEffect: {
-  //     boxShadow: "inset 700px 0 0 0 #F3D75D",
-  //     backgroundColor: "#F3D75D",
-  //     color: "black",
-  //   },
-  // };
 
-  // const menuHover = {
-  //   borderBottom: "solid",
-  //   borderBottomWidth: "4px",
-  //   borderBottomColor:"black"
-  // }
-  // const menuInitial = {
-  //   borderBottom: "solid",
-  //   borderBottomWidth: "4px",
-  //   borderBottomColor:"transparent"
-  // } 
 
   return (
     <nav>
@@ -60,7 +42,7 @@ const Header = () => {
       </ul>
       <div className="middle-container">
         <div className="logo-container">
-          <img src="https://i.ibb.co/G2DR038/Untitled-Design-22.png"></img>
+          <img alt="wow what a beautiful logo"src="https://i.ibb.co/G2DR038/Untitled-Design-22.png"></img>
         </div>
 
         <div className="search-container1">

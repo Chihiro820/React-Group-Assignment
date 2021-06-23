@@ -6,10 +6,10 @@ import { ProductButton, BackButton } from '../styles/styledComponents/ButtonStyl
 const Product = ({ match }) => {
   const [product, setProduct] = useState({});
   const location=useLocation();
-  console.log(location.state.allData);
+  //console.log(location.state.allData); 
   useEffect(() => {
     fetchProduct();
-  }, []);
+  });
 
   const fetchProduct = async () => {
     try {
@@ -90,7 +90,7 @@ const Product = ({ match }) => {
                           scale: 1.04,
                           transition: { duration:0.2 },
                         }}>
-                        <img src={products.img} />
+                        <img src={products.img} alt="product"/>
                         <h4>{products.title}</h4>
                         <p>{products.price}€</p>
                     </motion.article>

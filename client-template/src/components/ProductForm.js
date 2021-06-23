@@ -1,4 +1,3 @@
-import React, {useState} from "react";
 import Style from "../styles/ProductForm.module.css";
 
 const ProductForm = ({product,submitHandler, handleTags, handleTitle, handleDescription, handleQuantity, handleImg, handlePrice, pageId}) => {

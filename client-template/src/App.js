@@ -1,10 +1,9 @@
-import logo from './logo.svg';
 import {
   BrowserRouter as Router, 
   Switch, 
   Route
 } from 'react-router-dom';
-import './App.css';
+import './styles/App.css';
 import Products from './pages/Products'
 import Header from './components/Header';
 import ManageProducts from './pages/admin/ManageProducts';
@@ -35,15 +34,3 @@ function App() {
 export default App;
 
 
-{/* <Router>
-<Nav />
-
-{/* Switch ensures that only 1 component renders. Stop rendering other components as soon as it gets a match */}
-{/* <Switch>
-  {/* Route associates a path with a specific component */}
-  // <Route path="/" exact component={Home} />
-  // <Route path="/manage-puns" component={ManagePuns} />
-  // <Route path="/update-pun/:id" component={UpdatePun} />
-  // <Route path="/create-pun" component={CreatePun} />
-// </Switch> 
-// </Router> 

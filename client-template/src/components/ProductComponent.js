@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import {motion} from "framer-motion"
 import { CardButton } from '../styles/styledComponents/ButtonStyle'
 
-// Icons at the top.. icons at hashtag.. make the entire product-div clickable
+
 const ProductComponent = ({ product,products}) => {
   return (
     <motion.article 
@@ -17,7 +17,7 @@ const ProductComponent = ({ product,products}) => {
        state: { allData: products.map((product)=>(
          product
        )) } }}>
-        <img className="card__img" src={product.img} alt="product image" />
+        <img className="card__img" src={product.img} alt="product" />
         <div className="card__info">
           <h2 className="card__title">{product.title}</h2>
           <p className="card__price">{product.price}€</p>
