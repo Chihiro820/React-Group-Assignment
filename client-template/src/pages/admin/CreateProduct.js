@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Link, useHistory } from "react-router-dom";
 import ProductForm from "../../components/ProductForm";
+import { RightButton } from '../../styles/styledComponents/ButtonStyle'
 
 const CreateProduct = () => {
   const [product, setProduct] = useState({});
@@ -46,8 +47,8 @@ const CreateProduct = () => {
 
   return (
     <div className="maincontainer">
-      <Link to="/admin/ManageProducts" className="admin-button-left">
-        &#x2190; back
+      <Link to="/admin/ManageProducts">
+        <RightButton>&#x2190; back</RightButton>
       </Link>
       <ProductForm
         pageId="create-product"

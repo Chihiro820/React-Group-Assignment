@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { useHistory, Link } from "react-router-dom";
 import ProductForm from "../../components/ProductForm";
+import { RightButton } from '../../styles/styledComponents/ButtonStyle'
 
 const UpdateProduct = ({ match }) => {
   const [product, setProduct] = useState({});
@@ -66,8 +67,8 @@ const UpdateProduct = ({ match }) => {
   console.log(match.params.productId);
   return (
     <div className="maincontainer">
-      <Link to="/admin/ManageProducts" className="admin-button-left">
-        &#x2190; back
+      <Link to="/admin/ManageProducts">
+        <RightButton>&#x2190; back </RightButton>
       </Link>
       <ProductForm
         pageId="update-product"

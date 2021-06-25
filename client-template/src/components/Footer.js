@@ -10,37 +10,20 @@ const Footer = () => {
 }
 
 const StyledFooter = styled.footer`
-  height: 140px;
-  background-color: #ffd005;
-  color: white;
+  height: 140px;  
+  color: black;
   display: flex;
   align-items: center;
   opacity: 1;
-  animation-name: footerFade;
-  animation-iteration-count: 1;
-  animation-timing-function: linear;
-  animation-duration: 2s;
-}
-
-@keyframes footerFade {
-  0% {
-    opacity: 0;
-  }
-
-  100% {
-    opacity: 1;
-  }
-}
-
+  background-color: #f2dc42;
+  
   p {
-    font-weight: 600;
-    font-size: 18px;
+    font-weight: 400;
+    font-size: 16px;
     margin:auto;
     display:block;    
-    text-align: center;
-  
-  }
-   
+    text-align: center;  
+  }   
 `;
 
 export default Footer

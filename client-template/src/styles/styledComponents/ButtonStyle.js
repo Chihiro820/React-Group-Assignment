@@ -46,7 +46,7 @@ export const CardButton = styled(ProductButton)`
   line-height:1.5;
 
   &:hover {
-    box-shadow: inset 300px 0 0 0 #F3D75D; 
+    box-shadow: inset 240px 0 0 0 #F3D75D; 
   }
 
 
@@ -61,20 +61,21 @@ export const AdminButton = styled.button`
   text-decoration: none;
   border: none;
   border-radius: 2px;
-  font-weight: 500;
+  font-weight: 400;
   cursor: pointer;
   text-transform: capitalize;
   transition: 0.13s ease-in;
   cursor: pointer;
 
   &:hover {
-    text-decoration: underline;
+    font-weight: 600;
     cursor:pointer;
   }
 `;
 
 export const RightButton = styled(AdminButton)`
   float: right;
+ 
 `;
 
 

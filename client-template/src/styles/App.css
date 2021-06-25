@@ -1,20 +1,3 @@
-/* BEM 
-Block__Element--Modifier
-Official documentation:
-Block: "A standalone entity that is meaningful on it's own"
-Element: "A part of a block that has no standalone meaning and is semantically tied to it's block. For example "title" doesn't really say anything unless it's tied to a block -> card__title which can be deciphered.
-Modifier: A flag on a block OR element. Used to change appearance or behaviour ---> .card__button--hover or .card--hover, depending on what HTML-element it goes on.   
-
-Example: The title of a card would have the classname .card__title--light
-card = block
-title = element 
-light = modifier 
-
-The card would also have the class .card, so that all global card-stylings can go there.
-
-Also!!! Single "-" does not have anything to do with BEM
-*/
-
 /*** Table of content ****/
 /**** 1. Global styles ****/
 /**** 2. Header ****/
@@ -40,6 +23,7 @@ Also!!! Single "-" does not have anything to do with BEM
   width: 1200px;
   margin: auto;
   padding: 0 30px 100px 30px;
+  min-height: 100vh;
 }
 
 /* Global styles for h1 */
@@ -79,10 +63,17 @@ ul.admin-bar {
   padding: 8px 15px;
 }
 
+.admin-bar a {
+  text-decoration: none;
+}
+
+.admin-bar a:hover {
+  text-decoration: underline;
+  color: white;
+}
 
 .admin-bar__listitem {
   color: white;
-
   text-align: center;
   padding: 6px 16px;
 }
@@ -141,6 +132,10 @@ ul.info-bar {
   width: 100%;
 }
 
+.logo-container img:hover {
+  cursor: pointer;
+}
+
 /* Search and login */
 .search-container1 {
   display: flex;
@@ -177,37 +172,8 @@ ul.info-bar {
   background-color: #f2dc43;
 }
 
-/* .top-menu {
-  width: 1200px;
-  margin: auto;
-  display: flex;
-  padding: 0px 30px;
-  padding-top: 4px;
-}
-
-.top-menu li {
-  line-height: 1.2;
-  font-size: 18px;
-  font-weight: 400;
-  text-align: center;
-  display: block;
-  width: 100%;
-  padding: 6px 0;
-  transition: 0.4s;
-} */
 
 
-
-
-/* .top-menu--list .top-menu--list-item:hover {
-  cursor: pointer;
-}
-
-.top-menu--list li:hover {
-  cursor: pointer;
-} */
-
-/**** Header ****/
 
 /**** Product cards ****/
 .card {
@@ -301,34 +267,6 @@ button {
   outline: 0 !important;
 }
 
-/* Buttons */
-/* .card__button,
-.card__button,
-.single-product__button {
-  text-decoration: none;
-  padding: 7px;
-  width: 100%;
-  text-align: center;
-  margin-top: 10px;
-  color: white;
-  background-color: #e1122c;
-  font-weight: 600;
-
-  line-height: 1.8;
-}
-
-.card__button button,
-.single-product__button {
-  line-height: 1.8;
-  font-size: 18px;
-}
-
-.card__button:hover,
-.card__button button:hover {
-  background-color: white;
-  color: #e1122c;
-}
-
 
 /* ? */
 .product-description a:nth-of-type(1):hover {
@@ -396,7 +334,6 @@ button {
 
 .single-product__image {
   display: block;
-  margin: auto;
 }
 
 .single-product__button {
@@ -410,8 +347,6 @@ button {
   padding: 0px 30px;
   margin: auto;
 }
-
-/* Back button */
 
 
 .longDayDiv {
@@ -433,8 +368,8 @@ button {
 }
 
 
-/* Sidebar */
-/* Width of sidebar and main product */
+/* Related products */
+/* Width of related product main product */
 #maincontainer-productpage {
   display: flex;
 }
@@ -502,56 +437,45 @@ aside {
   font-weight: 600;
 }
 
-/* Sidebar */
 
-/* *** Admin pages ****/
-/* General styling */
 
-/* Product table admin */
-/* table {
-  border-collapse: collapse;
+/**** Form style *** */
+
+form {
+  margin-top: 2%;
 }
 
-tr {
-  border-bottom: 3px solid #000000c4;
-  padding: 00px 30px;
+form h1 {
+  margin-bottom: 30px;
 }
 
-td {
-  padding: 10px;
-}
-
-td a,
-td button {
+form input,
+textarea {
+  margin: 6px 0px 20px 0px;
+  display: block;
   width: 100%;
-  line-height: 2;
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid rgb(192, 189, 189);
 }
 
-td {
-  /* text-align: center;} */
-
-
-/* Buttons */
-/* .admin-button-right {
-  float: right;
+label {
+  text-align: left;
+  width: 100%;
+  display: block;
 }
 
-.admin-button-right,
-.admin-button-left {
-  color: black;
-  background-color: rgb(235, 220, 12);
-  padding: 10px;
-  text-decoration: none;
-  border: none;
-  border-radius: 2px;
-  font-weight: 500;
-  cursor: pointer;
-  text-transform: capitalize;
+input[type="submit"] {
+  background-color: #51a021;
+  color: white;
+  padding: 15px 10px;
+
+  font-size: 22px;
+  border-radius: 5px;
+  font-weight: 600;
 }
 
-.admin-button-right:hover,
-.admin-button-left:hover {
+input[type="submit"]:hover {
   text-decoration: underline;
-} */
-
-/**** Admin pages *** */
+  cursor: pointer;
+}

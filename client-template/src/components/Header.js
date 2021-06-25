@@ -5,9 +5,6 @@ import styled from 'styled-components'
 
 const Header = () => {
   
-
-
-
   return (
     <nav>
       <ul className="admin-bar">
@@ -29,25 +26,28 @@ const Header = () => {
         </li>
         <li className="info-bar__listitem">
           <span>
-            <i class="fa fa-question-circle"></i>
+          <i class="fa fa-comment"></i>
           </span>{" "}
-          Free consultation{" "}
+          All inquiries answered within 24 hours{" "}
         </li>
         <li className="info-bar__listitem">
           <span>
-            <i class="fa fa-comment"></i>
-          </span>{" "}
-          All inquiries answered within 24 hours
+             <i class="fa fa-question-circle"></i>
+          </span>{" "}Free consultation
+       
         </li>
       </ul>
       <div className="middle-container">
         <div className="logo-container">
+          <Link to="/">
           <img alt="wow what a beautiful logo"src="https://i.ibb.co/G2DR038/Untitled-Design-22.png"></img>
+          </Link>
+         
         </div>
 
         <div className="search-container1">
           <div className="search-container2">
-            <i class="fa fa-user"></i> <i class="fa fa-shopping-cart"></i>{" "}
+            <i class="fa fa-user"></i> <i class="fa fa-shopping-cart"></i>
           </div>
           <div className="search-container3">
             <input

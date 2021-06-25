@@ -1,12 +1,11 @@
-import Style from "../styles/ProductForm.module.css";
 
 const ProductForm = ({product,submitHandler, handleTags, handleTitle, handleDescription, handleQuantity, handleImg, handlePrice, pageId}) => {
 
   const btnLabel = pageId === 'create-product' ? 'Create' : 'Update'
   const pageTitle = pageId === 'create-product' ? 'Create product' : 'Update product'
   return (
-    <div className={Style.formContainer}>
-      <form className={Style.form} onSubmit={submitHandler}>
+    <div>
+      <form onSubmit={submitHandler}>
         <h1>{pageTitle}</h1>
       <label>
           Product name
